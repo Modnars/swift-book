@@ -1,4 +1,4 @@
-# Swift 初程
+# Swift 之旅
 
 &#160; &#160; &#160; &#160; 按照编程传统，使用一门新的编程语言编码的第一个程序往往应当是在屏幕上打印“Hello, world!”。那么对于 Swift 而言，仅需一行代码即可完成：
 
@@ -9,9 +9,9 @@ print("Hello, world!")
 
 &#160; &#160; &#160; &#160; 如果你曾编写过 C 或 Objective-C 的代码，那么这样的语法对你来说可能是很熟悉的。在 Swift 中，这样的一行代码就已经是一个完整的程序了。你甚至无需为此导入一个独立的库来支持类似于输入或输出、字符串处理的功能。写在全局范围内的代码被视为程序的执行起点，所以你也无需为此添加一个 `main()` 函数。甚至，你也无需在每行代码语句的末尾添加分号。
 
-&#160; &#160; &#160; &#160; 这场 Swift 初程将向你展示如何完成各种各样的编程任务，并以此来为你提供开始用 Swift 编程的足够信息。不必担心你可能对某些内容不够理解，因为初程中介绍的每个内容，后续章节中都会有详细的解释说明。
+&#160; &#160; &#160; &#160; 这场 Swift 之旅将向你展示如何完成各种各样的编程任务，并以此来为你提供开始用 Swift 编程的足够信息。不必担心你可能对某些内容不够理解，因为初程中介绍的每个内容，后续章节中都会有详细的解释说明。
 
-> 说明
+> _说明_
 >
 > &#160; &#160; &#160; &#160; 为了最佳的练习体验，可将本章内容作为一个 Playground 内容在 Xcode 中打开。Playground 可以让你编辑完代码就可以立即看到它们的运行结果。
 >
@@ -27,41 +27,50 @@ myVariable = 50
 let myConstant = 42
 ```
 
+&#160; &#160; &#160; &#160; 无论是常量还是变量，其类型都必须要与为其赋予的值的类型一致。然而，你无需总是要显式地指定值的类型。当你创造一个常量或变量并对其进行赋值时，编译器就会自动按照所赋值的类型推导其类型。在上面的例子中，编译器推导出 `myVariable` 是整数类型，因为它的初始值就是一个整数。
+
+&#160; &#160; &#160; &#160; 当然，如果初始值无法提供足够的信息（或者甚至都没有初始值），可以在变量（常量）名之后指定其具体类型，中间用冒号 `:` 隔开。
+
 ```swift
 let implicitInteger = 70
 let implicitDouble = 70.0
 let explicitDouble: Double = 70
+```
 
-// EXPERIMENT:
-//   Create a constant with an explicit type of `Float` and a value of `4`.
-let explicitFloat: Float = 4
+> _实践_
+>
+> &#160; &#160; &#160; &#160; 创造一个常量，将其类型指定为 Float 并为其赋值为 4
 
+&#160; &#160; &#160; &#160; 值永远不会隐式转换为另一种类型。如果你需要将值转换为一个不同的类型，则需要显示地构造一个所需类型的实例。
+
+```swift
 let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)
+```
 
-// EXPERIMENT:
-//   Try removing the conversion to `String` from the last line. What error
-// do you get?
-//
-// ANSWER:
-//   Error: "Binary operator '+' cannot be applied to operands of type 'String' 
-// and 'Int'"
+> _实践_
+>
+> &#160; &#160; &#160; &#160; 尝试从最后一行代码中移除掉 `String` 。看看这时编译器会向你提示什么错误？
 
+&#160; &#160; &#160; &#160; 其实，当字符串中包含一些值时，有一种更简单的写法：可以将目标值写在小括号（ `(` 和 `)` ）内，并且在左括号前加一个反斜杠（ `\` ）。举个例子：
+
+```swift
 let apples = 3
 let oranges = 5
 let appleSummary = "I have \(apples) apples."
 let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+```
 
 // EXPERIMENT:
 //   Use `\()` to include a floating-point calculation in a string and to
 // include someone's name in a greeting.
-let math_pi: Float = 3.14159
-let math_e: Float = 2.71828
-let author = "Modnar"
-let expStr = "Sum of PI and e is \(math_pi + math_e)."
-let expGreeting = "Hello, \(author)!"
-```
+
+> _实践_
+>
+> 使用 `\()` 来将一个浮点数算式放入一个字符串中，并且尝试将某个人的名字放到一句问候的字符串中。
+
+&#160; &#160; &#160; &#160; 可以使用三个双引号（ `"""` ）来界定那些可能占据多行文本的字符串。引号界定范围内的每行文本前的缩进都将被移除，直到它匹配到终止界定引号符。举个例子：
 
 ```swift
 let quotation = """
@@ -69,6 +78,8 @@ I said "I have \(apples) apples."
 And then I said "I have \(apples + oranges) pieces of fruit."
 """
 ```
+
+&#160; &#160; &#160; &#160; 创建数组和字典这样的容器时，可以使用中括号（ `[` 和 `]` ），并且访问它们的元素时，只需要在中括号中填写要访问的下标或键值即可。（需要给定其字面值时，可以用元素列表的形式，元素间用逗号（ `,` ）分隔，）列表中最后一个元素的后面也可以跟填一个逗号。
 
 ```swift
 var shoppingList = ["catfish", "water", "tulips"]
@@ -79,18 +90,32 @@ var occupations = [
     "Kaylee": "Mechanic",
 ]
 occupations["Jayne"] = "Public Relations"
+```
 
+&#160; &#160; &#160; &#160; 当你向数组中添加元素时，数组自然也会随之增长。
+
+```swift
 shoppingList.append("blue paint")
 print(shoppingList)
+```
 
+&#160; &#160; &#160; &#160; 当需要创造一个空的数组或字典时，就需要使用初始化语句（注意需要填充指定元素类型）。
+
+```swift
 let emptyArray = [String]()
 let emptyDictionary = [String: Float]()
+```
 
+&#160; &#160; &#160; &#160; 如果容器的类型信息可以被推导出来，那么你就可以用 `[]` 来表示一个空数组，用 `[:]` 来表示一个空字典。比如说，当你为一个（已经确定类型的）变量赋予新值或者传递参数给一个函数时，那这个新值、参数值就可以是这样的空数组、空字典。
+
+```swift
 shoppingList = []
 occupations = [:]
 ```
 
-## Control Flow
+## 控制流
+
+&#160; &#160; &#160; &#160; 使用 `if` 和 `switch` 关键字来创建条件语句，使用 `for-in` ， `repeat-while` 关键字来创建循环语句。条件或循环变量两边的小括号是可选的，而控制语句逻辑内的主体则必须要用大括号来界定。
 
 ```swift
 let individualScores = [75, 43, 103, 87, 12]
@@ -103,32 +128,50 @@ for score in individualScores {
     }
 }
 print(teamScore)
+// 打印 “11”
+```
 
+&#160; &#160; &#160; &#160; 对于一个 `if` 语句，其条件语句必须是一个布尔类型的表达式，这也就是说对于类似 `if score { ... }` 这样的代码就是错误的，因为条件本身并不会（像 C 语言一样）是一个隐式判断是否为零的布尔表达式。
+
+&#160; &#160; &#160; &#160; 你可以使用 `if` 和 `let` 组合来应对那些值可能不存在的情况。这些值可能不存在的类型被称为可选值类型，可选值类型的变量或常量就是可选值。一个可选值要么确实拥有一个值，要么就只是一个 `nil` 来表示它的值的确不存在。在一个值的类型标识后使用问号符（ `?` ）来表示这个值是一个可选值。
+
+```swift
 var optionalString: String? = "Hello"
 print(optionalString == nil)
+// 打印 “false”
 
 var optionalName: String? = "John Appleseed"
-// var optionalName: String? = nil // For the EXPERIMENT.
 var greeting = "Hello!"
 if let name = optionalName {
     greeting = "Hello, \(name)"
-} else { // For the EXPERIMENT.
-    greeting = "Hello, Modnar!"
 }
-print(greeting)
+```
 
-// EXPERIMENT:
-//   Change `optionalName` to `nil`. What greeting do you get? Add an `else`
-// clause that sets a different greeting if `optionalName` is `nil`.
-//
-// ANSWER:
-//   Prints "Hello!"
-//   For the `else` clause, see the source code.
+> _实践_
+>
+> &#160; &#160; &#160; &#160; 将 `optionalName` 的值改为 `nil` 。此时你得到的问候语句内容是什么？针对 `optionalName` 为 `nil` 的情况添加一个 `else` 语句来设定一个不同的问候（ `greeting` 变量）内容。
 
+&#160; &#160; &#160; &#160; 如果可选值是 `nil` ，那么条件语句的结果将会是 `false` ，继而大括号中的逻辑内容将会被跳过执行。否则，可选值就会被解包并且赋值给 `let` 关键字后面的常量，而这个常量就可以使得解包后的值可以在这段代码块中被使用了。
+
+&#160; &#160; &#160; &#160; 另一种处理可选值的方式是使用 `??` 操作符（ operator ，在 C 、 C++ 中常被译为运算符）来为其提供一个默认值。如果可选值的确缺失了，那么就将使用默认值来替换。
+
+```swift
 let nickName: String? = nil
 let fullName: String = "John Appleseed"
 let informalGreeting = "Hi \(nickName ?? fullName)"
+```
 
+&#160; &#160; &#160; &#160; 你也可以用一种更简短的编码来解包一个值，这时可以对这个解包后的值使用相同的名字。
+
+```swift
+if let nickname {
+    print("Hey, \(nickname)")
+}
+```
+
+&#160; &#160; &#160; &#160; switch 语句支持任意类型的数据以及更加广泛的比较操作，这些比较不只适用于整数型，且比较不止判断是否相等这一种。
+
+```swift
 let vegetable = "red pepper"
 switch vegetable {
 case "celery":
@@ -140,14 +183,19 @@ case let x where x.hasSuffix("pepper"):
 default:
     print("Everything tastes good in soup.")
 }
+```
 
-// EXPERIMENT:
-//   Try removing the default case. What error do you get?
-//
-// ANSWER:
-//   Error: "Switch must be exhaustive".
+> _实践_
+>
+> &#160; &#160; &#160; &#160; 尝试移除上面的默认情况（ default case ），看看这时编译器会提示什么错误？
 
-// P10
+&#160; &#160; &#160; &#160; 请留意 `let` 是如何被用于模式条件匹配情况时给常量赋值的。
+
+&#160; &#160; &#160; &#160; 当执行完一段 switch 语句的条件匹配逻辑时，程序执行流程将会从 switch 语句中退出。程序并不会（像 C 那样）在下一个条件匹配逻辑中继续执行，所以你也无需在每个条件匹配逻辑流程最后显示地指定退出。
+
+&#160; &#160; &#160; &#160; 你可以用一对标识符来表示一个键值对，并用这样的方式来迭代遍历一个字典中的所有元素。**字典是一个无序的集合（容器）**，所以遍历得到的也可能是一个按照随意的顺序排列的结果。
+
+```swift
 let interestingNumbers = [
     "Prime": [2, 3, 5, 7, 11, 13],
     "Fibnoacci": [1, 1, 2, 3, 5, 8],
@@ -155,37 +203,50 @@ let interestingNumbers = [
 ]
 var largest = 0
 var kindLabel = ""
-for (kind, numbers) in interestingNumbers {
+for (_, numbers) in interestingNumbers {
     for number in numbers {
         if number > largest {
-            // EXPERIMENT:
-            //   Add another variable to keep track of which kind of number was
-            // the largest, as well as what that largest number was.
-            kindLabel = kind
             largest = number
         }
     }
 }
 print(largest)
+// 打印最大值 “25”
+```
 
+> _实践_
+>
+> &#160; &#160; &#160; &#160; 用一个变量名替换 `_` ，并且追踪哪种数列中的值是最大值。
+
+&#160; &#160; &#160; &#160; 使用 `while` 关键字来循环执行一段代码直到循环条件发生变化（不再满足继续循环的条件）。循环语句的循环条件可以在循环体后来给定，此时可以确保这个循环体至少执行了一次。
+
+```swift
 var n = 2
 while n < 100 {
     n *= 2
 }
 print(n)
+// 打印 “128”
 
 var m = 2
 repeat {
     m *= 2
 } while m < 100
 print(m)
+// 打印 “128”
+```
 
+&#160; &#160; &#160; &#160; 你也可以用 `..<` 来为下标创建一个区间。
+
+```swift
 var total = 0
 for i in 0..<4 {
     total += i
 }
 print(total)
 ```
+
+&#160; &#160; &#160; &#160; 使用 `..<` 可以创建一个不包括右界（区间最大值）的区间（左闭右开区间），也可以使用 `...` 来创建一个包含左右界的区间（闭区间）。
 
 ## Functions and Closures
 ```swift
