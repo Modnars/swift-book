@@ -1,0 +1,25 @@
+{
+  "name": "TheSwiftProgrammingLanguage",
+  "version": "1.0.0",
+  "description": "TheSwiftProgrammingLanguage",
+  "main": "book.js",
+  "dependencies": {
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-theme-comscore": "0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Modnars/TheSwiftProgrammingLanguage.git"
+  },
+  "author": "modnarshen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Modnars/TheSwiftProgrammingLanguage/issues"
+  },
+  "homepage": "https://github.com/Modnars/TheSwiftProgrammingLanguage#readme"
+}

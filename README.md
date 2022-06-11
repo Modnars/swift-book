@@ -1,5 +1,13 @@
-# _Swift 编程语言_
+# Swift 编程语言
 
-## _源_
+## 说明
 
-> [_The Swift Programming Language_](https://docs.swift.org/swift-book/)
+&#160; &#160; &#160; &#160; 这是我尝试翻译的第一本编程书籍。我曾无数次心血来潮地想要学习 Swift 编程语言与 iOS 程序设计开发，但很多时候都又深感国内相关基础知识内容的匮乏。值得惊喜与肯定的是，国内有诸多优秀的同学致力于改善这一现状，比如 SwiftGG 翻译组已经对这一教程做了完整详细的翻译。那么我为什么还要尝试对这本书进行翻译呢？
+
+&#160; &#160; &#160; &#160; 从内容翻译本身来讲，翻译的人不同，对词汇理解、语法运用的能力本就难以一致，加上对编程语言本身的理解，也可能导致输出的结果与本义可能有失精准。为了尽可能地避免多人翻译导致的这种细节差异性，我决定尝试独立完整地将书中内容尽可能详尽地翻译下来。我想这将是对我自己能力的锻炼与提升，同时希望也能更好地帮助需要这些知识内容的人。
+
+## 参考
+
+> 英文在线原版 [_The Swift Programming Language_](https://docs.swift.org/swift-book/)
+
+> SwiftGG翻译组中文译版 [_The Swift Programming Language in Chinese_](https://swiftgg.gitbook.io/swift/)
