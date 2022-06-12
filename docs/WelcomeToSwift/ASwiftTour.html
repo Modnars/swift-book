@@ -295,12 +295,9 @@ myVariable = <span class="hljs-number">50</span>
 <span class="hljs-keyword">let</span> appleSummary = <span class="hljs-string">&quot;I have <span class="hljs-subst">\(apples)</span> apples.&quot;</span>
 <span class="hljs-keyword">let</span> fruitSummary = <span class="hljs-string">&quot;I have <span class="hljs-subst">\(apples + oranges)</span> pieces of fruit.&quot;</span>
 </code></pre>
-<p>// EXPERIMENT:
-//   Use <code>\()</code> to include a floating-point calculation in a string and to
-// include someone&apos;s name in a greeting.</p>
 <blockquote>
 <p><em>&#x5B9E;&#x8DF5;</em></p>
-<p>&#x4F7F;&#x7528; <code>\()</code> &#x6765;&#x5C06;&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x7B97;&#x5F0F;&#x653E;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x5C1D;&#x8BD5;&#x5C06;&#x67D0;&#x4E2A;&#x4EBA;&#x7684;&#x540D;&#x5B57;&#x653E;&#x5230;&#x4E00;&#x53E5;&#x95EE;&#x5019;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>\()</code> &#x6765;&#x5C06;&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x7B97;&#x5F0F;&#x653E;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x5C1D;&#x8BD5;&#x5C06;&#x67D0;&#x4E2A;&#x4EBA;&#x7684;&#x540D;&#x5B57;&#x653E;&#x5230;&#x4E00;&#x53E5;&#x95EE;&#x5019;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x3002;</p>
 </blockquote>
 <p>&#xA0; &#xA0; &#xA0; &#xA0; &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E09;&#x4E2A;&#x53CC;&#x5F15;&#x53F7;&#xFF08; <code>&quot;&quot;&quot;</code> &#xFF09;&#x6765;&#x754C;&#x5B9A;&#x90A3;&#x4E9B;&#x53EF;&#x80FD;&#x5360;&#x636E;&#x591A;&#x884C;&#x6587;&#x672C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5F15;&#x53F7;&#x754C;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6BCF;&#x884C;&#x6587;&#x672C;&#x524D;&#x7684;&#x7F29;&#x8FDB;&#x90FD;&#x5C06;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x5339;&#x914D;&#x5230;&#x7EC8;&#x6B62;&#x754C;&#x5B9A;&#x5F15;&#x53F7;&#x7B26;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-swift">let quotation = &quot;&quot;&quot;
@@ -435,25 +432,25 @@ occupations = [:]
 <span class="hljs-built_in">print</span>(total)
 </code></pre>
 <p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>..&lt;</code> &#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0D;&#x5305;&#x62EC;&#x53F3;&#x754C;&#xFF08;&#x533A;&#x95F4;&#x6700;&#x5927;&#x503C;&#xFF09;&#x7684;&#x533A;&#x95F4;&#xFF08;&#x5DE6;&#x95ED;&#x53F3;&#x5F00;&#x533A;&#x95F4;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>...</code> &#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5DE6;&#x53F3;&#x754C;&#x7684;&#x533A;&#x95F4;&#xFF08;&#x95ED;&#x533A;&#x95F4;&#xFF09;&#x3002;</p>
-<h2 id="functions-and-closures">Functions and Closures</h2>
+<h2 id="&#x51FD;&#x6570;&#x4E0E;&#x95ED;&#x5305;">&#x51FD;&#x6570;&#x4E0E;&#x95ED;&#x5305;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>func</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x9700;&#x8981;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x540E;&#x8DDF;&#x5C0F;&#x62EC;&#x53F7;&#x548C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x5373;&#x53EF;&#x3002;&#x58F0;&#x660E;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x4F7F;&#x7528; <code>-&gt;</code> &#x6765;&#x5206;&#x9694;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF08;&#x7531;&#x53C2;&#x6570;&#x540D;&#x5B57;&#x548C;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x7EC4;&#x6210;&#xFF09;&#x548C;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">greet</span><span class="hljs-params">(person: String, day: String)</span></span> -&gt; <span class="hljs-type">String</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello <span class="hljs-subst">\(person)</span>, today is <span class="hljs-subst">\(day)</span>.&quot;</span>
 }
 greet(person: <span class="hljs-string">&quot;Bob&quot;</span>, day: <span class="hljs-string">&quot;Tuesday&quot;</span>)
-
-<span class="hljs-comment">// EXPEIMENT:</span>
-<span class="hljs-comment">//   Remove the `day` parameter. Add a parameter to include today&apos;s lunch </span>
-<span class="hljs-comment">// special in the greeting.</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">greet</span><span class="hljs-params">(person: String, lunch: String)</span></span> -&gt; <span class="hljs-type">String</span> {
-    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello <span class="hljs-subst">\(person)</span>, today&apos;s lunch is <span class="hljs-subst">\(lunch)</span>!&quot;</span>
-}
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">greet</span><span class="hljs-params">(<span class="hljs-number">_</span> person: String, on day: String)</span></span> -&gt; <span class="hljs-type">String</span> {
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x79FB;&#x9664;&#x6389;&#x51FD;&#x6570;&#x53C2;&#x6570; <code>day</code> &#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x5C06;&#x4ECA;&#x5929;&#x7684;&#x7279;&#x4EF7;&#x5348;&#x9910;&#x7F6E;&#x5165;&#x95EE;&#x5019;&#x53E5;&#x4E2D;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x51FD;&#x6570;&#x5916;&#x90E8;&#x4F7F;&#x7528;&#x5176;&#x53C2;&#x6570;&#x540D;&#x79F0;&#x4F5C;&#x4E3A;&#x5176;&#x8C03;&#x7528;&#x65F6;&#x7684;&#x53C2;&#x6570;&#x6807;&#x7B7E;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x53C2;&#x6570;&#x5355;&#x72EC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x53C2;&#x6570;&#x6807;&#x7B7E;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528; <code>_</code> &#x6765;&#x8868;&#x793A;&#x8C03;&#x7528;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x586B;&#x5199;&#x53C2;&#x6570;&#x6807;&#x7B7E;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">greet</span><span class="hljs-params">(<span class="hljs-number">_</span> person: String, on day: String)</span></span> -&gt; <span class="hljs-type">String</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello <span class="hljs-subst">\(person)</span>, today is <span class="hljs-subst">\(day)</span>.&quot;</span>
 }
 greet(<span class="hljs-string">&quot;John&quot;</span>, on: <span class="hljs-string">&quot;Wednesday&quot;</span>)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateStatistics</span><span class="hljs-params">(scores: [Int])</span></span> -&gt; (<span class="hljs-built_in">min</span>: <span class="hljs-type">Int</span>, <span class="hljs-built_in">max</span>: <span class="hljs-type">Int</span>, sum: <span class="hljs-type">Int</span>) {
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528;&#x5143;&#x7EC4;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EC4;&#x5408;&#x503C;&#x3002;&#x6BD4;&#x5982;&#x4E00;&#x4E9B;&#x51FD;&#x6570;&#x5C31;&#x5E0C;&#x671B;&#x8FD4;&#x56DE;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x7EC4;&#x5408;&#x503C;&#xFF0C;&#x8BBF;&#x95EE;&#x8FD9;&#x6837;&#x7684;&#x7EC4;&#x5408;&#x503C;&#x65F6;&#xFF0C;&#x65E2;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x4EEC;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x6765;&#x8BBF;&#x95EE;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x4EEC;&#x6309;&#x5E8F;&#x51FA;&#x73B0;&#x7684;&#x4E0B;&#x6807;&#x6765;&#x8BBF;&#x95EE;&#xFF08;&#x4E0B;&#x6807;&#x4ECE;0&#x5F00;&#x59CB;&#xFF09;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">calculateStatistics</span><span class="hljs-params">(scores: [Int])</span></span> -&gt; (<span class="hljs-built_in">min</span>: <span class="hljs-type">Int</span>, <span class="hljs-built_in">max</span>: <span class="hljs-type">Int</span>, sum: <span class="hljs-type">Int</span>) {
     <span class="hljs-keyword">var</span> <span class="hljs-built_in">min</span> = scores[<span class="hljs-number">0</span>]
     <span class="hljs-keyword">var</span> <span class="hljs-built_in">max</span> = scores[<span class="hljs-number">0</span>]
     <span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>
@@ -471,9 +468,12 @@ greet(<span class="hljs-string">&quot;John&quot;</span>, on: <span class="hljs-s
 }
 <span class="hljs-keyword">let</span> statistics = calculateStatistics(scores: [<span class="hljs-number">5</span>, <span class="hljs-number">3</span>, <span class="hljs-number">100</span>, <span class="hljs-number">3</span>, <span class="hljs-number">9</span>])
 <span class="hljs-built_in">print</span>(statistics.sum)
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;120&#x201D;</span>
 <span class="hljs-built_in">print</span>(statistics.<span class="hljs-number">2</span>)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnFifteen</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;120&#x201D;</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x51FD;&#x6570;&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x5D4C;&#x5957;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x5D4C;&#x5957;&#x7684;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5916;&#x5C42;&#x51FD;&#x6570;&#x4F53;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x6765;&#x6574;&#x7406;&#x4EE3;&#x7801;&#x66F4;&#x591A;&#x6216;&#x903B;&#x8F91;&#x66F4;&#x590D;&#x6742;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">returnFifteen</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Int</span> {
     <span class="hljs-keyword">var</span> y = <span class="hljs-number">10</span>
     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">()</span></span> {
         y += <span class="hljs-number">5</span>
@@ -482,8 +482,9 @@ greet(<span class="hljs-string">&quot;John&quot;</span>, on: <span class="hljs-s
     <span class="hljs-keyword">return</span> y
 }
 returnFifteen()
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">makeIncrementer</span><span class="hljs-params">()</span></span> -&gt; ((<span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span>) {
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5728; Swift &#x4E2D;&#xFF0C;&#x51FD;&#x6570;&#x662F;&#x7B2C;&#x4E00;&#x7C7B;&#x578B;<sup><a href="#fn_1" id="reffn_1">1</a></sup>&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x51FD;&#x6570;&#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">makeIncrementer</span><span class="hljs-params">()</span></span> -&gt; ((<span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span>) {
     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">addOne</span><span class="hljs-params">(number: Int)</span></span> -&gt; <span class="hljs-type">Int</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> + number
     }
@@ -491,8 +492,9 @@ returnFifteen()
 }
 <span class="hljs-keyword">var</span> increment = makeIncrementer()
 increment(<span class="hljs-number">7</span>)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">hasAnyMaches</span><span class="hljs-params">(list: [Int], condition: <span class="hljs-params">(Int)</span></span></span> -&gt; <span class="hljs-type">Bool</span>) -&gt; <span class="hljs-type">Bool</span> {
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x540C;&#x7406;&#xFF0C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">hasAnyMaches</span><span class="hljs-params">(list: [Int], condition: <span class="hljs-params">(Int)</span></span></span> -&gt; <span class="hljs-type">Bool</span>) -&gt; <span class="hljs-type">Bool</span> {
     <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> list {
         <span class="hljs-keyword">if</span> condition(item) {
             <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
@@ -505,45 +507,46 @@ increment(<span class="hljs-number">7</span>)
 }
 <span class="hljs-keyword">var</span> numbers = [<span class="hljs-number">20</span>, <span class="hljs-number">19</span>, <span class="hljs-number">7</span>, <span class="hljs-number">12</span>]
 hasAnyMaches(list: numbers, condition: lessThanTen)
-
-numbers.<span class="hljs-built_in">map</span>({ (number: <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span> <span class="hljs-keyword">in</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5728; Swift &#x4E2D;&#xFF0C;&#x51FD;&#x6570;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x95ED;&#x5305;&#xFF08; closure &#xFF09;&#xFF0C;&#x800C;&#x95ED;&#x5305;&#x6307;&#x7684;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x7A0D;&#x540E;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x3002;&#x5F53;&#x95ED;&#x5305;&#x88AB;&#x5B9A;&#x4E49;&#x65F6;&#xFF0C;&#x95ED;&#x5305;&#x5185;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x6B64;&#x95ED;&#x5305;&#x6240;&#x5728;&#x8303;&#x56F4;&#x5185;&#x7684;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x7684;&#xFF0C;&#x5C3D;&#x7BA1;&#x8FD9;&#x4E2A;&#x95ED;&#x5305;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x65F6;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x4E0D;&#x518D;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x524D;&#x9762;&#x5173;&#x4E8E;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5DF2;&#x7ECF;&#x8BC1;&#x660E;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;&#x3002;&#x66F4;&#x7B80;&#x4FBF;&#x5730;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x5927;&#x62EC;&#x53F7;&#xFF08; <code>{}</code> &#xFF09;&#x6765;&#x754C;&#x5B9A;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x4ECE;&#x800C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x95ED;&#x5305;&#x3002;&#x4F7F;&#x7528; <code>in</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x5206;&#x9694;&#x95ED;&#x5305;&#x58F0;&#x660E;&#x548C;&#x95ED;&#x5305;&#x5B9E;&#x73B0;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-swift">numbers.<span class="hljs-built_in">map</span>({ (number: <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span> <span class="hljs-keyword">in</span>
     <span class="hljs-keyword">let</span> result = <span class="hljs-number">3</span> * number
     <span class="hljs-keyword">return</span> result
 })
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Rewrite the closure to return zero for all odd numbers.</span>
-numbers.<span class="hljs-built_in">map</span>({ (number: <span class="hljs-type">Int</span>) -&gt; <span class="hljs-type">Int</span> <span class="hljs-keyword">in</span>
-    <span class="hljs-keyword">let</span> result = (number % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) ? number : <span class="hljs-number">0</span>
-    <span class="hljs-keyword">return</span> result
-})
-
-<span class="hljs-keyword">let</span> mappedNumbers = numbers.<span class="hljs-built_in">map</span>({ number <span class="hljs-keyword">in</span> <span class="hljs-number">3</span> * number })
-<span class="hljs-built_in">print</span>(mappedNumbers)
-
-<span class="hljs-keyword">let</span> sortedNumbers = numbers.sorted { $<span class="hljs-number">0</span> &gt; $<span class="hljs-number">1</span> }
-<span class="hljs-built_in">print</span>(sortedNumbers)
 </code></pre>
-<h2 id="objects-and-classes">Objects and Classes</h2>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x91CD;&#x5199;&#x8FD9;&#x4E2A;&#x95ED;&#x5305;&#x6765;&#x5B9E;&#x73B0;&#x4F20;&#x5165;&#x5947;&#x6570;&#x65F6;&#x8FD4;&#x56DE;&#x96F6;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5176;&#x5B9E;&#xFF0C;&#x5F88;&#x591A;&#x573A;&#x666F;&#x4E0B;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x8BA9;&#x8FD9;&#x4E2A;&#x95ED;&#x5305;&#x7684;&#x5B9A;&#x4E49;&#x66F4;&#x52A0;&#x7CBE;&#x7B80;&#x3002;&#x6BD4;&#x5982;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x7684;&#x56DE;&#x8C03;&#x95ED;&#x5305;&#xFF0C;&#x6B64;&#x65F6;&#x7684;&#x95ED;&#x5305;&#x7C7B;&#x578B;&#xFF08;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x3001;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#xFF09;&#x90FD;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x5C31;&#x53EF;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x7701;&#x7565;&#x5B83;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x6216;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x3002;&#x5982;&#x679C;&#x95ED;&#x5305;&#x4E2D;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x884C;&#x8BED;&#x53E5;&#xFF0C;&#x90A3;&#x4E48;&#x95ED;&#x5305;&#x5C31;&#x5C06;&#x8FD4;&#x56DE;&#x8FD9;&#x884C;&#x8BED;&#x53E5;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x8BA4;&#x4E3A;&#x8FD9;&#x884C;&#x8BED;&#x53E5;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5C31;&#x662F;&#x95ED;&#x5305;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> mappedNumbers = numbers.<span class="hljs-built_in">map</span>({ number <span class="hljs-keyword">in</span> <span class="hljs-number">3</span> * number })
+<span class="hljs-built_in">print</span>(mappedNumbers)
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8FDB;&#x4E00;&#x6B65;&#x5730;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6807;&#x53F7;&#x6765;&#x8BBF;&#x95EE;&#x4F20;&#x5165;&#x53C2;&#x6570;&#x6765;&#x53D6;&#x4EE3;&#x4F7F;&#x7528;&#x5176;&#x540D;&#x5B57;&#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B80;&#x77ED;&#x7684;&#x95ED;&#x5305;&#x6765;&#x8BF4;&#x8FD9;&#x5C06;&#x683C;&#x5916;&#x9002;&#x7528;&#x3002;&#x5F53;&#x95ED;&#x5305;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x5B83;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8DDF;&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x5C0F;&#x62EC;&#x53F7;&#x540E;&#x9762;&#x3002;&#x5F53;&#x8FD9;&#x4E2A;&#x95ED;&#x5305;&#x540C;&#x65F6;&#x662F;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x552F;&#x4E00;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x6389;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x5C0F;&#x62EC;&#x53F7;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> sortedNumbers = numbers.sorted { $<span class="hljs-number">0</span> &gt; $<span class="hljs-number">1</span> }
+<span class="hljs-built_in">print</span>(sortedNumbers)
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;[20, 19, 12, 7]&#x201D;</span>
+</code></pre>
+<h2 id="&#x5BF9;&#x8C61;&#x4E0E;&#x7C7B;">&#x5BF9;&#x8C61;&#x4E0E;&#x7C7B;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>class</code> &#x5173;&#x952E;&#x5B57;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x7C7B;&#x540D;&#x6807;&#x8BC6;&#x7B26;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x7684;&#x65B9;&#x5F0F;&#x548C;&#x4EE5;&#x524D;&#x5B9A;&#x4E49;&#x5E38;&#x91CF;&#x3001;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#x4E00;&#x81F4;&#xFF0C;&#x533A;&#x522B;&#x5C31;&#x662F;&#x6B64;&#x65F6;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x662F;&#x7C7B;&#x7A7A;&#x95F4;&#x3002;&#x540C;&#x7406;&#xFF0C;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x7684;&#x58F0;&#x660E;&#x4E5F;&#x4E0E;&#x4E4B;&#x524D;&#x4E00;&#x81F4;&#x3002;</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Shape</span> </span>{
     <span class="hljs-keyword">var</span> numberOfSides = <span class="hljs-number">0</span>
     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;A shape with <span class="hljs-subst">\(numberOfSides)</span> sides.&quot;</span>
     }
-    <span class="hljs-comment">// EXPERIMENT:</span>
-    <span class="hljs-comment">//   Add a constant property with `let`, and add another method that takes an </span>
-    <span class="hljs-comment">// argument.</span>
-    <span class="hljs-keyword">let</span> constVal = <span class="hljs-number">0</span>
-    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">printMessage</span><span class="hljs-params">(message: String)</span></span> -&gt; <span class="hljs-type">String</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Message details: <span class="hljs-subst">\(message)</span>&quot;</span>
-    }
 }
-
-<span class="hljs-keyword">var</span> shape = <span class="hljs-type">Shape</span>()
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>let</code> &#x5173;&#x952E;&#x5B57;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#x5B57;&#x6BB5;&#xFF0C;&#x5E76;&#x4E14;&#x6DFB;&#x52A0;&#x53E6;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528;&#x7C7B;&#x540D;&#x540E;&#x8DDF;&#x5C0F;&#x62EC;&#x53F7;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x53EF;&#x4EE5;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x5C5E;&#x4E8E;&#x6B64;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x4F7F;&#x7528;&#x5706;&#x70B9;&#x7B26;&#x53F7;&#x6765;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x6216;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x5B9A;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> shape = <span class="hljs-type">Shape</span>()
 shape.numberOfSides = <span class="hljs-number">7</span>
 <span class="hljs-keyword">var</span> shapeDescription = shape.simpleDescription()
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NamedShape</span> </span>{
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8FD9;&#x6837;&#x5B9A;&#x4E49;&#x7684; <code>Shape</code> &#x7C7B;&#x662F;&#x7F3A;&#x5C11;&#x4E86;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x7684;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x5C31;&#x662F;&#x5C31;&#x662F;&#x7C7B;&#x7684;&#x521D;&#x59CB;&#x5316;&#x6784;&#x9020;&#x5668;&#xFF08;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF09;&#xFF0C;&#x6784;&#x9020;&#x5668;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x521D;&#x59CB;&#x5316;&#x7684;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#x3002;&#x4F7F;&#x7528; <code>init</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NamedShape</span> </span>{
     <span class="hljs-keyword">var</span> numberOfSides = <span class="hljs-number">0</span>
     <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>
 
@@ -555,8 +558,12 @@ shape.numberOfSides = <span class="hljs-number">7</span>
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;A shape with <span class="hljs-subst">\(numberOfSides)</span> sides.&quot;</span>
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span>: <span class="hljs-title">NamedShape</span> </span>{
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528; <code>self</code> &#x6765;&#x533A;&#x5206;&#x54EA;&#x4E2A; name &#x662F;&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF0C;&#x54EA;&#x4E2A; name &#x662F;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x3002;&#x5F53;&#x4F60;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x76F8;&#x5E94;&#x53C2;&#x6570;&#x5C31;&#x548C;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E00;&#x6837;&#x4F20;&#x9012;&#x7ED9;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x65E0;&#x8BBA;&#x662F;&#x5728;&#x58F0;&#x660E;&#x65F6;&#xFF08;&#x5C31;&#x50CF; <code>numberOfSides</code> &#xFF09;&#xFF0C;&#x8FD8;&#x662F;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#xFF08;&#x5C31;&#x50CF; <code>name</code> &#xFF09;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x90FD;&#x9700;&#x8981;&#x88AB;&#x8D4B;&#x503C;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5982;&#x679C;&#x5728;&#x5BF9;&#x8C61;&#x88AB;&#x9500;&#x6BC1;&#x524D;&#x4F60;&#x9700;&#x8981;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x7684;&#x6E05;&#x7406;&#x903B;&#x8F91;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528; <code>deinit</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6790;&#x6784;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x5728;&#x5B9A;&#x4E49;&#x65F6;&#x901A;&#x8FC7;&#x5206;&#x53F7;&#x540E;&#x8DDF;&#x7236;&#x7C7B;&#x540D;&#x5B57;&#x6765;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;&#x3002;&#x5BF9;&#x4E8E;&#x7C7B;&#x6765;&#x8BF4;&#x6CA1;&#x6709;&#x5FC5;&#x987B;&#x8981;&#x4E25;&#x683C;&#x7EE7;&#x627F;&#x7684;&#x6839;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x6309;&#x9700;&#x7EE7;&#x627F;&#x6216;&#x7701;&#x7565;&#x4E00;&#x4E2A;&#x7236;&#x7C7B;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x8986;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x7528; <code>override</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x6807;&#x8BC6;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x4F7F;&#x7528; <code>override</code> &#x5374;&#x53C8;&#x8986;&#x5199;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x7F16;&#x8BD1;&#x5668;&#x5C31;&#x4F1A;&#x8BA4;&#x4E3A;&#x8FD9;&#x662F;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7528;&#x4E86; <code>override</code> &#x6765;&#x6807;&#x8BC6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5374;&#x53D1;&#x73B0;&#x4F60;&#x5E76;&#x672A;&#x8986;&#x5199;&#x4EFB;&#x4F55;&#x7236;&#x7C7B;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4E5F;&#x4F1A;&#x8BA4;&#x4E3A;&#x8FD9;&#x662F;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span>: <span class="hljs-title">NamedShape</span> </span>{
     <span class="hljs-keyword">var</span> sideLength: <span class="hljs-type">Double</span>
 
     <span class="hljs-keyword">init</span>(sideLength: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
@@ -576,8 +583,13 @@ shape.numberOfSides = <span class="hljs-number">7</span>
 <span class="hljs-keyword">let</span> test = <span class="hljs-type">Square</span>(sideLength: <span class="hljs-number">5.2</span>, name: <span class="hljs-string">&quot;my test square&quot;</span>)
 test.area()
 test.simpleDescription()
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EquilateraTriangle</span>: <span class="hljs-title">NamedShape</span> </span>{
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>Circle</code> &#x7684; <code>NamedShape</code> &#x7684;&#x5B50;&#x7C7B;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B50;&#x7C7B;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x534A;&#x5F84;&#x503C;&#x548C;&#x540D;&#x5B57;&#x4F5C;&#x4E3A;&#x5B83;&#x6784;&#x9020;&#x65F6;&#x6240;&#x9700;&#x7684;&#x53C2;&#x6570;&#x3002;&#x8BF7;&#x4E3A;&#x8FD9;&#x4E2A; <code>Circle</code> &#x7C7B;&#x5B9E;&#x73B0;&#x5B83;&#x7684; <code>area()</code> &#x548C; <code>simpleDescription()</code> &#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x9664;&#x4E86;&#x7528;&#x4E8E;&#x7B80;&#x5355;&#x7684;&#x5B58;&#x50A8;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4E3A;&#x4ED6;&#x4EEC;&#x8BBE;&#x5B9A; get &#x65B9;&#x6CD5;&#x548C; set &#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EquilateralTriangle</span>: <span class="hljs-title">NamedShape</span> </span>{
     <span class="hljs-keyword">var</span> sideLength: <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
 
     <span class="hljs-keyword">init</span>(sideLength: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
@@ -599,35 +611,32 @@ test.simpleDescription()
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;An equilateral triangle with sides of length <span class="hljs-subst">\(sideLength)</span>.&quot;</span>
     }
 }
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Make another subclass of `NamedShape` called `Circle` that takes a radius and a</span>
-<span class="hljs-comment">// name as arguments to its initializer. Implement an `area()` and a</span>
-<span class="hljs-comment">// `simpleDescription()` method on the `Circle` class.</span>
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span>: <span class="hljs-title">NamedShape</span> </span>{
-    <span class="hljs-keyword">var</span> radius: <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
-
-    <span class="hljs-keyword">init</span>(radius: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
-        <span class="hljs-keyword">self</span>.radius = radius
-        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(name: name)
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">area</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">Double</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-number">3.14</span> * radius * radius
-    }
-
-    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;A circle with radius <span class="hljs-subst">\(radius)</span>.&quot;</span>
-    }
-}
-
-<span class="hljs-keyword">var</span> triangle = <span class="hljs-type">EquilateraTriangle</span>(sideLength: <span class="hljs-number">3.1</span>, name: <span class="hljs-string">&quot;a triangle&quot;</span>)
+<span class="hljs-keyword">var</span> triangle = <span class="hljs-type">EquilateralTriangle</span>(sideLength: <span class="hljs-number">3.1</span>, name: <span class="hljs-string">&quot;a triangle&quot;</span>)
 <span class="hljs-built_in">print</span>(triangle.perimeter)
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;9.3&#x201D;</span>
 triangle.perimeter = <span class="hljs-number">9.9</span>
 <span class="hljs-built_in">print</span>(triangle.sideLength)
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TriangleAndSquare</span> </span>{
-    <span class="hljs-keyword">var</span> triangle: <span class="hljs-type">EquilateraTriangle</span> {
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;3.3000000000000003&#x201D;</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5728; <code>perimeter</code> &#x7684; set &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x65B0;&#x503C;&#x6709;&#x4E00;&#x4E2A;&#x9690;&#x5F0F;&#x7684;&#x540D;&#x5B57;&#xFF1A; <code>newValue</code> &#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728; <code>set</code> &#x540E;&#x9762;&#x5728;&#x5C0F;&#x62EC;&#x53F7;&#x4E2D;&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C; <code>EquilateralTriangle</code> &#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6709;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ul>
+<li><ol>
+<li>&#x4E3A;&#x5B50;&#x7C7B;&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x5B57;&#x6BB5;&#x8D4B;&#x503C;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x4FEE;&#x6539;&#x7236;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x6BB5;&#x503C;&#x3002;&#x4EFB;&#x4F55;&#x5176;&#x4F59;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3001; get &#x51FD;&#x6570;&#x6216; set &#x51FD;&#x6570;&#x4E5F;&#x90FD;&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x51C6;&#x5907;&#x9636;&#x6BB5;&#x5B8C;&#x6210;&#x51C6;&#x5907;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5982;&#x679C;&#x4F60;&#x65E0;&#x9700;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x503C;&#x5374;&#x53C8;&#x9700;&#x8981;&#x5728;&#x66F4;&#x65B0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x503C;&#x524D;&#x540E;&#x505A;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>willSet</code> &#x548C; <code>didSet</code> &#x5173;&#x952E;&#x5B57;&#x3002;&#x8FD9;&#x90E8;&#x5206;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#x5C06;&#x4F1A;&#x5728;&#x9664;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E4B;&#x5916;&#xFF0C;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x6307;&#x5B9A;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x6267;&#x884C;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x7684; triangle &#x7684;&#x957F;&#x5EA6;&#x5C06;&#x4F1A;&#x4E00;&#x76F4;&#x548C;&#x5B83;&#x7684; square &#x7684;&#x957F;&#x5EA6;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TriangleAndSquare</span> </span>{
+    <span class="hljs-keyword">var</span> triangle: <span class="hljs-type">EquilateralTriangle</span> {
         <span class="hljs-keyword">willSet</span> {
             square.sideLength = newValue.sideLength
         }
@@ -639,19 +648,24 @@ triangle.perimeter = <span class="hljs-number">9.9</span>
     }
     <span class="hljs-keyword">init</span>(size: <span class="hljs-type">Double</span>, name: <span class="hljs-type">String</span>) {
         square = <span class="hljs-type">Square</span>(sideLength: size, name: name)
-        triangle = <span class="hljs-type">EquilateraTriangle</span>(sideLength: size, name: name)
+        triangle = <span class="hljs-type">EquilateralTriangle</span>(sideLength: size, name: name)
     }
 }
 <span class="hljs-keyword">var</span> triangleAndSquare = <span class="hljs-type">TriangleAndSquare</span>(size: <span class="hljs-number">10</span>, name: <span class="hljs-string">&quot;another test shape&quot;</span>)
 <span class="hljs-built_in">print</span>(triangleAndSquare.square.sideLength)
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;10.0&#x201D;</span>
 <span class="hljs-built_in">print</span>(triangleAndSquare.triangle.sideLength)
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;10.0&#x201D;</span>
 triangleAndSquare.square = <span class="hljs-type">Square</span>(sideLength: <span class="hljs-number">50</span>, name: <span class="hljs-string">&quot;larger square&quot;</span>)
 <span class="hljs-built_in">print</span>(triangleAndSquare.triangle.sideLength)
-
-<span class="hljs-keyword">let</span> optionalSquare: <span class="hljs-type">Square</span>? = <span class="hljs-type">Square</span>(sideLength: <span class="hljs-number">2.5</span>, name: <span class="hljs-string">&quot;optional square&quot;</span>)
+<span class="hljs-comment">// &#x6253;&#x5370;&#x201C;50.0&#x201D;</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5F53;&#x5904;&#x7406;&#x53EF;&#x9009;&#x503C;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3001;&#x8BBF;&#x95EE;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;&#x548C;&#x4E0B;&#x6807;&#x8BBF;&#x95EE;&#x8FD9;&#x7C7B;&#x64CD;&#x4F5C;&#x524D;&#x52A0; <code>?</code>&#x3002;&#x5982;&#x679C; <code>?</code> &#x4E4B;&#x524D;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <code>nil</code> &#xFF0C;&#x90A3;&#x4E48; <code>?</code> &#x4E4B;&#x540E;&#x7684;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#x90FD;&#x5C06;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x5E76;&#x4E14;&#x6574;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <code>nil</code> &#x3002;&#x5426;&#x5219;&#xFF0C;&#x8FD9;&#x4E2A;&#x53EF;&#x9009;&#x503C;&#x5C31;&#x5C06;&#x88AB;&#x6B63;&#x5E38;&#x89E3;&#x5305;&#xFF0C;&#x5E76;&#x4E14; <code>?</code> &#x4E4B;&#x540E;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x89E3;&#x5305;&#x540E;&#x7684;&#x503C;&#x7684;&#x6307;&#x5B9A;&#x903B;&#x8F91;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x503C;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> optionalSquare: <span class="hljs-type">Square</span>? = <span class="hljs-type">Square</span>(sideLength: <span class="hljs-number">2.5</span>, name: <span class="hljs-string">&quot;optional square&quot;</span>)
 <span class="hljs-keyword">let</span> sideLength = optionalSquare?.sideLength
 </code></pre>
-<h2 id="enumerations-and-structures">Enumerations and Structures</h2>
+<h2 id="&#x679A;&#x4E3E;&#x4E0E;&#x7ED3;&#x6784;&#x4F53;">&#x679A;&#x4E3E;&#x4E0E;&#x7ED3;&#x6784;&#x4F53;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>enum</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x521B;&#x5EFA;&#x679A;&#x4E3E;&#x7C7B;&#x3002;&#x4E0E;&#x7C7B;&#x548C;&#x5176;&#x4ED6;&#x547D;&#x540D;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#xFF0C;&#x679A;&#x4E3E;&#x503C;&#x4E5F;&#x6709;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3002;</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Rank</span>: <span class="hljs-title">Int</span> </span>{
     <span class="hljs-keyword">case</span> ace = <span class="hljs-number">1</span>
     <span class="hljs-keyword">case</span> two, three, four, five, six, seven, eight, nine, ten
@@ -674,20 +688,20 @@ triangleAndSquare.square = <span class="hljs-type">Square</span>(sideLength: <sp
 }
 <span class="hljs-keyword">let</span> ace = <span class="hljs-type">Rank</span>.ace
 <span class="hljs-keyword">let</span> aceRawValue = ace.rawValue
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Write a function that compares two `Rank` values by comparing their raw values.</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">compareRankByRawValue</span><span class="hljs-params">(v1: Rank, v2: Rank)</span></span> -&gt; <span class="hljs-type">Int</span> {
-    <span class="hljs-keyword">return</span> v1.rawValue - v2.rawValue
-}
-<span class="hljs-built_in">print</span>(compareRankByRawValue(v1: <span class="hljs-type">Rank</span>.ace, v2: <span class="hljs-type">Rank</span>.queen))
-
-<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> convertedRank = <span class="hljs-type">Rank</span>(rawValue: <span class="hljs-number">3</span>) {
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#x901A;&#x8FC7; <code>Rank</code> &#x7C7B;&#x7684;&#x539F;&#x59CB;&#x503C;&#x6765;&#x5BF9;&#x5176;&#x679A;&#x4E3E;&#x503C;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Swift &#x4F1A;&#x4E3A;&#x679A;&#x4E3E;&#x503C;&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x8D4B;&#x503C;&#x7ED9;&#x5176;&#x539F;&#x59CB;&#x503C;&#xFF0C;&#x9010;&#x4E2A;&#x9012;&#x589E; 1 &#x3002;&#x4F46;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x8FD9;&#x79CD;&#x9ED8;&#x8BA4;&#x7684;&#x884C;&#x4E3A;&#x901A;&#x8FC7;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x679A;&#x4E3E;&#x503C;&#x7684;&#x5177;&#x4F53;&#x539F;&#x59CB;&#x503C;&#x3002;&#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C; <code>Ace</code> &#x5C31;&#x88AB;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x539F;&#x59CB;&#x503C;&#x4E3A; 1 &#xFF0C;&#x7136;&#x540E;&#x63A5;&#x4E0B;&#x6765;&#x6BCF;&#x4E2A;&#x679A;&#x4E3E;&#x503C;&#x7684;&#x539F;&#x59CB;&#x503C;&#x90FD;&#x6309;&#x5E8F;&#x9012;&#x589E; 1 &#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6D6E;&#x70B9;&#x6570;&#x6765;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x503C;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;&#x4F7F;&#x7528; <code>rawValue</code> &#x6765;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x679A;&#x4E3E;&#x503C;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>init?(rawValue:)</code> &#x8FD9;&#x6837;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x901A;&#x8FC7;&#x539F;&#x59CB;&#x503C;&#x6784;&#x9020;&#x7684;&#x679A;&#x4E3E;&#x503C;&#x3002;&#x5982;&#x679C;&#x539F;&#x59CB;&#x503C;&#x6B63;&#x786E;&#x5339;&#x914D;&#x4E86;&#x76F8;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x503C;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <code>nil</code> &#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> convertedRank = <span class="hljs-type">Rank</span>(rawValue: <span class="hljs-number">3</span>) {
     <span class="hljs-comment">// let threeDescription = convertedRank.simpleDescription()</span>
     <span class="hljs-keyword">let</span> <span class="hljs-number">_</span> = convertedRank.simpleDescription()
 }
-
-<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Suit</span> </span>{
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x679A;&#x4E3E;&#x503C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4ED6;&#x4EEC;&#x539F;&#x59CB;&#x503C;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x679A;&#x4E3E;&#x503C;&#x53EF;&#x80FD;&#x96BE;&#x4EE5;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x6709;&#x610F;&#x4E49;&#x7684;&#x539F;&#x59CB;&#x503C;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x65E0;&#x9700;&#x6307;&#x5B9A;&#x6216;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Suit</span> </span>{
     <span class="hljs-keyword">case</span> spades, hearts, diamonds, clubs
 
     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
@@ -702,23 +716,17 @@ triangleAndSquare.square = <span class="hljs-type">Square</span>(sideLength: <sp
             <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;clubs&quot;</span>
         }
     }
-
-    <span class="hljs-comment">// EXPERIMENT</span>
-    <span class="hljs-comment">//   Add a `color()` method to `Suit` that returns &quot;black&quot; for spades and clubs,</span>
-    <span class="hljs-comment">// and returns &quot;red&quot; for hearts and diamonds.</span>
-    <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">color</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
-        <span class="hljs-keyword">switch</span> <span class="hljs-keyword">self</span> {
-        <span class="hljs-keyword">case</span> .spades, .clubs:
-            <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;black&quot;</span>
-        <span class="hljs-keyword">case</span> .hearts, .diamonds:
-            <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;heart&quot;</span>
-        }
-    }
 }
 <span class="hljs-keyword">let</span> hearts = <span class="hljs-type">Suit</span>.hearts
 <span class="hljs-keyword">let</span> heartsDescription = hearts.simpleDescription()
-
-<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">ServerResponse</span> </span>{
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4E3A; <code>Suit</code> &#x679A;&#x4E3E;&#x7C7B;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A; <code>color()</code> &#x51FD;&#x6570;&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x679A;&#x4E3E;&#x503C;&#x4E3A;&#x9ED1;&#x6843;&#x3001;&#x6885;&#x82B1;&#x65F6;&#x8FD4;&#x56DE; <code>&quot;black&quot;</code> &#xFF0C;&#x5F53;&#x679A;&#x4E3E;&#x503C;&#x4E3A;&#x7EA2;&#x5FC3;&#x548C;&#x65B9;&#x5757;&#x65F6;&#x8FD4;&#x56DE; <code>&quot;red&quot;</code> &#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8BF7;&#x6CE8;&#x610F;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6307;&#x5B9A; <code>hearts</code> &#x679A;&#x4E3E;&#x503C;&#x65F6;&#x6709;&#x7528;&#x5230;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x3002;&#x5F53;&#x8D4B;&#x503C;&#x7ED9; <code>hearts</code> &#x5E38;&#x91CF;&#x65F6;&#xFF0C;&#x679A;&#x4E3E;&#x503C;&#x4F7F;&#x7528;&#x4E86;&#x5B8C;&#x6574;&#x7684; <code>Suit.hearts</code>&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x5E38;&#x91CF;&#x5728;&#x8D4B;&#x503C;&#x524D;&#x5BF9;&#x4E8E;&#x679A;&#x4E3E;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x4E00;&#x65E0;&#x6240;&#x77E5;&#x3002;&#x800C;&#x5728; switch &#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x7B80;&#x77ED;&#x7684; <code>hearts</code> &#x6765;&#x6307;&#x5B9A;&#x76F8;&#x5E94;&#x679A;&#x4E3E;&#x503C;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6B64;&#x65F6;&#x7684; <code>self</code> &#x7684;&#x7C7B;&#x578B;&#x5DF2;&#x7ECF;&#x786E;&#x5B9A;&#x662F;&#x4E00;&#x4E2A; <code>Suit</code> &#x679A;&#x4E3E;&#x7C7B;&#x578B;&#x4E86;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x610F;&#x5DF2;&#x77E5;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x4E3A;&#x679A;&#x4E3E;&#x7C7B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x7B80;&#x77ED;&#x6A21;&#x5F0F;&#x6765;&#x786E;&#x5B9A;&#x76F8;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x503C;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5982;&#x679C;&#x679A;&#x4E3E;&#x7C7B;&#x62E5;&#x6709;&#x539F;&#x59CB;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E9B;&#x539F;&#x59CB;&#x503C;&#x5C31;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x76F8;&#x5E94;&#x679A;&#x4E3E;&#x7C7B;&#x5B9A;&#x4E49;&#x5185;&#x5BB9;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x679A;&#x4E3E;&#x503C;&#x5B9E;&#x4F8B;&#x6709;&#x7740;&#x76F8;&#x540C;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;&#x800C;&#x679A;&#x4E3E;&#x503C;&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x53E6;&#x4E00;&#x79CD;&#x5C5E;&#x6027;&#x503C;&#x7C7B;&#x578B;&#x2014;&#x2014;&#x7ED1;&#x5B9A;&#x503C;&#x3002;&#x8FD9;&#x4E9B;&#x7ED1;&#x5B9A;&#x503C;&#x53EA;&#x6709;&#x5728;&#x521B;&#x5EFA;&#x4E86;&#x5177;&#x4F53;&#x7684;&#x679A;&#x4E3E;&#x503C;&#x5B9E;&#x4F8B;&#x65F6;&#x624D;&#x88AB;&#x786E;&#x5B9A;&#x4E0B;&#x6765;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x7ED1;&#x5B9A;&#x503C;&#x5C31;&#x50CF;&#x662F;&#x679A;&#x4E3E;&#x503C;&#x5B9E;&#x4F8B;&#x7684;&#x5B58;&#x50A8;&#x5B57;&#x6BB5;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x6709;&#x4E00;&#x79CD;&#x573A;&#x666F;&#x9700;&#x8981;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8BF7;&#x6C42;&#x83B7;&#x53D6;&#x65E5;&#x51FA;&#x3001;&#x65E5;&#x843D;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x90A3;&#x4E48;&#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x54CD;&#x5E94;&#x5185;&#x5BB9;&#x6765;&#x8BF4;&#xFF0C;&#x8981;&#x4E48;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x65E5;&#x51FA;&#x3001;&#x65E5;&#x843D;&#x65F6;&#x95F4;&#x4FE1;&#x606F;&#xFF0C;&#x8981;&#x4E48;&#x8FD4;&#x56DE;&#x8BF7;&#x6C42;&#x5931;&#x8D25;&#x5E76;&#x9644;&#x5E26;&#x76F8;&#x5E94;&#x7684;&#x9519;&#x8BEF;&#x539F;&#x56E0;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">ServerResponse</span> </span>{
     <span class="hljs-keyword">case</span> result(<span class="hljs-type">String</span>, <span class="hljs-type">String</span>)
     <span class="hljs-keyword">case</span> failure(<span class="hljs-type">String</span>)
     <span class="hljs-comment">// EXPERIMENT:</span>
@@ -734,13 +742,16 @@ triangleAndSquare.square = <span class="hljs-type">Square</span>(sideLength: <sp
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Sunrise is at <span class="hljs-subst">\(sunrise)</span> and sunset is at <span class="hljs-subst">\(sunset)</span>&quot;</span>)
 <span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .failure(message):
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Failure... <span class="hljs-subst">\(message)</span>&quot;</span>)
-<span class="hljs-keyword">case</span> .offline():
-    <span class="hljs-comment">// Not use `case let .offline():` :</span>
-    <span class="hljs-comment">// &apos;let&apos; pattern has no effect; sub-pattern didn&apos;t bind any variables</span>
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Your device is offline...&quot;</span>)
 }
-
-<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Card</span> </span>{
+<span class="hljs-comment">// &#x6253;&#x5370; &quot;Sunrise is at 6:00 am and sunset is at 8:09 pm.&quot;</span>
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4E3A; <code>ServerResponse</code> &#x679A;&#x4E3E;&#x7C7B;&#x6DFB;&#x52A0;&#x7B2C;&#x4E09;&#x79CD;&#x679A;&#x4E3E;&#x503C;&#xFF0C;&#x5E76;&#x5B8C;&#x5584;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4E2D;&#x7684; switch &#x8BED;&#x53E5;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8BF7;&#x7559;&#x610F; switch &#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x65E5;&#x51FA;&#x3001;&#x65E5;&#x843D;&#x65F6;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x4ECE; <code>ServerResponse</code> &#x7C7B;&#x578B;&#x7684;&#x679A;&#x4E3E;&#x503C;&#x4E2D;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>struct</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x3002;&#x7ED3;&#x6784;&#x4F53;&#x652F;&#x6301;&#x548C;&#x7C7B;&#x76F8;&#x540C;&#x7684;&#x8BF8;&#x591A;&#x884C;&#x4E3A;&#xFF0C;&#x6BD4;&#x5982;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x548C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x4E8C;&#x8005;&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x5C31;&#x662F;&#xFF0C;&#x7ED3;&#x6784;&#x4F53;&#x5728;&#x4F20;&#x9012;&#x7ED9;&#x65B0;&#x7684;&#x503C;&#x65F6;&#x9700;&#x8981;&#x5B8C;&#x6574;&#x62F7;&#x8D1D;&#xFF0C;&#x662F;&#x503C;&#x4F20;&#x9012;&#xFF0C;&#x800C;&#x7C7B;&#x4F20;&#x9012;&#x7ED9;&#x65B0;&#x7684;&#x503C;&#x65F6;&#x53EA;&#x662F;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#x662F;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Card</span> </span>{
     <span class="hljs-keyword">var</span> rank: <span class="hljs-type">Rank</span>
     <span class="hljs-keyword">var</span> suit: <span class="hljs-type">Suit</span>
     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">simpleDescription</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">String</span> {
@@ -749,32 +760,52 @@ triangleAndSquare.square = <span class="hljs-type">Square</span>(sideLength: <sp
 }
 <span class="hljs-keyword">let</span> threeOfSpades = <span class="hljs-type">Card</span>(rank: .three, suit: .spades)
 <span class="hljs-keyword">let</span> threeOfSpadesDescription = threeOfSpades.simpleDescription()
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Write a function that returns an array containing a full deck of cards, with one</span>
-<span class="hljs-comment">// card of each combaination of rank and suit.</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">getPokerCards</span><span class="hljs-params">()</span></span> -&gt; [<span class="hljs-type">Card</span>] {
-    <span class="hljs-keyword">var</span> cards = [<span class="hljs-type">Card</span>]()
-    <span class="hljs-keyword">for</span> rank <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">13</span> {
-        cards.append(<span class="hljs-type">Card</span>(rank: <span class="hljs-type">Rank</span>(rawValue: rank) ?? .ace, suit: .spades))
-        cards.append(<span class="hljs-type">Card</span>(rank: <span class="hljs-type">Rank</span>(rawValue: rank) ?? .ace, suit: .hearts))
-        cards.append(<span class="hljs-type">Card</span>(rank: <span class="hljs-type">Rank</span>(rawValue: rank) ?? .ace, suit: .clubs))
-        cards.append(<span class="hljs-type">Card</span>(rank: <span class="hljs-type">Rank</span>(rawValue: rank) ?? .ace, suit: .diamonds))
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x6574;&#x526F;&#x5305;&#x542B;&#x6240;&#x6709;&#x724C;&#x9762;&#x503C;&#x548C;&#x82B1;&#x8272;&#x7EC4;&#x5408;&#x7684;&#x724C;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5E76;&#x53D1;">&#x5E76;&#x53D1;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>async</code> &#x6765;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fetchUserID</span><span class="hljs-params">(from server: String)</span></span> async -&gt; <span class="hljs-type">Int</span> {
+    <span class="hljs-keyword">if</span> server == <span class="hljs-string">&quot;primary&quot;</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-number">97</span>
     }
-    <span class="hljs-keyword">for</span> card <span class="hljs-keyword">in</span> cards {
-        <span class="hljs-built_in">print</span>(card.simpleDescription())
-    }
-    <span class="hljs-keyword">return</span> cards
+    <span class="hljs-keyword">return</span> <span class="hljs-number">501</span>
 }
 </code></pre>
-<h2 id="protocols-and-extensions">Protocols and Extensions</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x6309;&#x7167;&#x5F02;&#x6B65;&#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x65F6;&#x9700;&#x8981;&#x5728;&#x5176;&#x524D;&#x65B9;&#x586B;&#x5199; <code>await</code> &#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fetchUsername</span><span class="hljs-params">(from server: String)</span></span> async -&gt; <span class="hljs-type">String</span> {
+    <span class="hljs-keyword">let</span> userID = await fetchUserID(from: server)
+    <span class="hljs-keyword">if</span> userID == <span class="hljs-number">501</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;John Appleseed&quot;</span>
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;guest&quot;</span>
+}
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>async let</code> &#x6765;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5B83;&#x4E0E;&#x5176;&#x4ED6;&#x5F02;&#x6B65;&#x4EE3;&#x7801;&#x5E76;&#x53D1;&#x6267;&#x884C;&#x3002;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x65F6;&#xFF0C;&#x5C31;&#x586B;&#x5199; <code>await</code> &#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">connectUser</span><span class="hljs-params">(to server: String)</span></span> async {
+    async <span class="hljs-keyword">let</span> userID = fetchUserID(from: server)
+    async <span class="hljs-keyword">let</span> username = fetchUsername(from: server)
+    <span class="hljs-keyword">let</span> greeting = await <span class="hljs-string">&quot;Hello <span class="hljs-subst">\(username)</span>, user ID `(userID)&quot;</span>
+    <span class="hljs-built_in">print</span>(greeting)
+}
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>Task</code> &#x6765;&#x8C03;&#x7528;&#x7531;&#x5F02;&#x6B65;&#x4EE3;&#x7801;&#x5B9A;&#x4E49;&#x4E14;&#x65E0;&#x9700;&#x7B49;&#x5F85;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-type">Task</span> {
+    await connectUser(to: <span class="hljs-string">&quot;primary&quot;</span>)
+}
+<span class="hljs-comment">// &#x6253;&#x5370; &quot;Hello Guest, user ID 97&quot;</span>
+</code></pre>
+<h2 id="&#x534F;&#x8BAE;&#x4E0E;&#x62D3;&#x5C55;">&#x534F;&#x8BAE;&#x4E0E;&#x62D3;&#x5C55;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>protocol</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;&#x3002;</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">protocol</span> <span class="hljs-title">ExampleProtocol</span> </span>{
     <span class="hljs-keyword">var</span> simpleDescription: <span class="hljs-type">String</span> { <span class="hljs-keyword">get</span> }
     <span class="hljs-keyword">mutating</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">adjust</span><span class="hljs-params">()</span></span>
-    <span class="hljs-comment">// mutating func anotherFunc() // For later Experiment.</span>
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleClass</span>: <span class="hljs-title">ExampleProtocol</span> </span>{
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x7C7B;&#x3001;&#x679A;&#x4E3E;&#x7C7B;&#x4EE5;&#x53CA;&#x7ED3;&#x6784;&#x4F53;&#x90FD;&#x53EF;&#x4EE5;&#x9075;&#x5FAA;&#x534F;&#x8BAE;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleClass</span>: <span class="hljs-title">ExampleProtocol</span> </span>{
     <span class="hljs-keyword">var</span> simpleDescription: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;A very simple class.&quot;</span>
     <span class="hljs-keyword">var</span> anathorProperty: <span class="hljs-type">Int</span> = <span class="hljs-number">69105</span>
     <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">adjust</span><span class="hljs-params">()</span></span> {
@@ -794,16 +825,14 @@ a.adjust()
 <span class="hljs-keyword">var</span> b = <span class="hljs-type">SimpleStructure</span>()
 b.adjust()
 <span class="hljs-keyword">let</span> bDescription = b.simpleDescription
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Add another requirement to `ExampleProtocol`. What changes do you need to make to</span>
-<span class="hljs-comment">// `SimpleClass` and `SimpleStructure` so that they still conform to the protocol?</span>
-<span class="hljs-comment">//</span>
-<span class="hljs-comment">// ANSWER:</span>
-<span class="hljs-comment">//   Like the function `adjust()`, the `anotherFunc()` also need the same</span>
-<span class="hljs-comment">// implementation under `class` and `struct`.</span>
-
-<span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Int</span>: <span class="hljs-title">ExampleProtocol</span> </span>{
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4E3A; <code>ExampleProtocol</code> &#x6DFB;&#x52A0;&#x53E6;&#x4E00;&#x4E2A;&#x5FC5;&#x8981;&#x5185;&#x5BB9;&#x3002;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x6765;&#x786E;&#x4FDD; <code>SimpleClass</code> &#x548C; <code>SimpleStructure</code> &#x4F9D;&#x7136;&#x9075;&#x5B88;&#x8FD9;&#x4E00;&#x534F;&#x8BAE;&#xFF1F;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x6CE8;&#x610F;&#x5728; <code>SimpleStructure</code> &#x7684;&#x58F0;&#x660E;&#x4E2D;&#x4F7F;&#x7528; <code>mutating</code> &#x5173;&#x952E;&#x5B57;&#x6765;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x6539;&#x53D8;&#x81EA;&#x8EAB;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x503C;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x3002;&#x800C; <code>SimpleClass</code> &#x65E0;&#x9700;&#x5BF9;&#x5176;&#x65B9;&#x6CD5;&#x505A;&#x7C7B;&#x4F3C;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x4FEE;&#x6539;&#x7684;&#x603B;&#x662F;&#x81EA;&#x8EAB;&#x7684;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x3002;</p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>extention</code> &#x6765;&#x4E3A;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x7C7B;&#x578B;&#x6DFB;&#x52A0;&#x62D3;&#x5C55;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982;&#x65B0;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x6216;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x62D3;&#x5C55;&#x6765;&#x786E;&#x4FDD;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x3001;&#x6216;&#x662F;&#x4F60;&#x5BFC;&#x5165;&#x7684;&#x5E93;&#x6216;&#x6846;&#x67B6;&#x4E2D;&#x6240;&#x542B;&#x7684;&#x7C7B;&#x80FD;&#x591F;&#x9075;&#x5FAA;&#x6307;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Int</span>: <span class="hljs-title">ExampleProtocol</span> </span>{
     <span class="hljs-keyword">var</span> simpleDescription: <span class="hljs-type">String</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;The number <span class="hljs-subst">\(<span class="hljs-keyword">self</span>)</span>&quot;</span>
     }
@@ -812,50 +841,50 @@ b.adjust()
     }
 }
 <span class="hljs-built_in">print</span>(<span class="hljs-number">7</span>.simpleDescription)
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Write an extension for the `Double` type that adds an `absoluteValue` property.</span>
-<span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">Double</span> </span>{
-    <span class="hljs-keyword">var</span> absoluteValue: <span class="hljs-type">Double</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span> &lt; <span class="hljs-number">0</span> ? -<span class="hljs-keyword">self</span> : <span class="hljs-keyword">self</span>
-    }
-}
-<span class="hljs-built_in">print</span>((-<span class="hljs-number">10.0</span>).absoluteValue)
-<span class="hljs-built_in">print</span>((<span class="hljs-number">82.3</span>).absoluteValue)
-
-<span class="hljs-keyword">let</span> protocolValue: <span class="hljs-type">ExampleProtocol</span> = a
-<span class="hljs-built_in">print</span>(protocolValue.simpleDescription)
+<span class="hljs-comment">// &#x6253;&#x5370; &quot;The number 7&quot;</span>
 </code></pre>
-<h2 id="error-handling">Error Handling</h2>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528;&#x62D3;&#x5C55;&#x6765;&#x4E3A; <code>Double</code> &#x7C7B;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; <code>absoluteValue</code> &#xFF08;&#x7EDD;&#x5BF9;&#x503C;&#xFF09;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F60;&#x53EF;&#x4EE5;&#x50CF;&#x5176;&#x4ED6;&#x547D;&#x540D;&#x7C7B;&#x578B;&#x4E00;&#x6837;&#x4F7F;&#x7528;&#x534F;&#x8BAE;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9075;&#x5FAA;&#x76F8;&#x540C;&#x534F;&#x8BAE;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5C3D;&#x7BA1;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#x53EF;&#x80FD;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;&#x3002;&#x5F53;&#x4F60;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x4E3A;&#x534F;&#x8BAE;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x90A3;&#x4E48;&#x4E0D;&#x662F;&#x7531;&#x534F;&#x8BAE;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x5C06;&#x4E0D;&#x518D;&#x53EF;&#x7528;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> protocolValue: <span class="hljs-type">ExampleProtocol</span> = a
+<span class="hljs-built_in">print</span>(protocolValue.simpleDescription)
+<span class="hljs-comment">// &#x6253;&#x5370;&quot;A very simple class.  Now 100% adjusted.&quot;</span>
+<span class="hljs-comment">// print(protocolValue.anotherProperty)  // &#x79FB;&#x9664;&#x6CE8;&#x91CA;&#x7B26;&#xFF0C;&#x770B;&#x770B;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x63D0;&#x793A;&#x4EC0;&#x4E48;&#x9519;&#x8BEF;&#xFF1F;</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5C3D;&#x7BA1; <code>protocolValue</code> &#x7684;&#x8FD0;&#x884C;&#x65F6;&#x7C7B;&#x578B;&#x4E3A; <code>SimpleClass</code> &#xFF0C;&#x4F46;&#x7F16;&#x8BD1;&#x5668;&#x4ECD;&#x5C06;&#x5176;&#x89C6;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684; <code>ExampleProtocol</code> &#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E5F;&#x5C31;&#x8868;&#x660E;&#x4F60;&#x4E0D;&#x80FD;&#x9519;&#x8BEF;&#x5730;&#x8BBF;&#x95EE;&#x90A3;&#x4E9B;&#x7531;&#x7C7B;&#x989D;&#x5916;&#x5B9A;&#x4E49;&#x800C;&#x975E;&#x5176;&#x7C7B;&#x6240;&#x9075;&#x4ECE;&#x7684;&#x534F;&#x8BAE;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;&#x65B9;&#x6CD5;&#x6216;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x3002;</p>
+<h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9075;&#x4ECE; <code>Error</code> &#x534F;&#x8BAE;&#x7684;&#x7C7B;&#x578B;&#x6765;&#x8868;&#x793A;&#x9519;&#x8BEF;&#x3002;</p>
 <pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">PrinterError</span>: <span class="hljs-title">Error</span> </span>{
     <span class="hljs-keyword">case</span> outOfPaper
     <span class="hljs-keyword">case</span> noToner
     <span class="hljs-keyword">case</span> onFire
 }
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">send</span><span class="hljs-params">(job: Int, toPrinter printerName: String)</span></span> <span class="hljs-keyword">throws</span> -&gt; <span class="hljs-type">String</span> {
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>throw</code> &#x6765;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x5E76;&#x7528; <code>throws</code> &#x6765;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x7684;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#x629B;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x5E76;&#x6267;&#x884C;&#x80FD;&#x591F;&#x5904;&#x7406;&#x76F8;&#x5E94;&#x9519;&#x8BEF;&#x7684;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">send</span><span class="hljs-params">(job: Int, toPrinter printerName: String)</span></span> <span class="hljs-keyword">throws</span> -&gt; <span class="hljs-type">String</span> {
     <span class="hljs-keyword">if</span> printerName == <span class="hljs-string">&quot;Never Has Toner&quot;</span> {
         <span class="hljs-keyword">throw</span> <span class="hljs-type">PrinterError</span>.noToner
     }
     <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Job sent&quot;</span>
 }
-
-<span class="hljs-keyword">do</span> {
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x3002;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528; <code>do-catch</code> &#x3002;&#x5728; <code>do</code> &#x7684;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x90A3;&#x4E9B;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x7684;&#x4EE3;&#x7801;&#x524D;&#x6807;&#x8BB0; <code>try</code> &#x3002;&#x800C;&#x5728; <code>catch</code> &#x4EE3;&#x7801;&#x5757;&#x4E2D;&#xFF0C;&#x88AB;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#x5C31;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x547D;&#x540D;&#x4E3A; <code>error</code> &#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x5B83;&#x8D4B;&#x4E88;&#x53E6;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">do</span> {
     <span class="hljs-keyword">let</span> printerResponse = <span class="hljs-keyword">try</span> send(job: <span class="hljs-number">1040</span>, toPrinter: <span class="hljs-string">&quot;Bi Sheng&quot;</span>)
-    <span class="hljs-comment">// let printerResponse = try send(job: 1040, toPrinter: &quot;Never Has Toner&quot;)</span>
     <span class="hljs-built_in">print</span>(printerResponse)
 } <span class="hljs-keyword">catch</span> {
     <span class="hljs-built_in">print</span>(error)
 }
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Change the printer name to &quot;Never Has Toner&quot;, so that the `send(job:toPrinter:)`</span>
-<span class="hljs-comment">// function throws an error.</span>
-<span class="hljs-comment">//</span>
-<span class="hljs-comment">// ANSWER:</span>
-<span class="hljs-comment">//   See the comment in source code.</span>
-
-<span class="hljs-keyword">do</span> {
+<span class="hljs-comment">// &#x6253;&#x5370; &quot;Job sent&quot;</span>
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5C06;&#x6253;&#x5370;&#x673A;&#x7684;&#x540D;&#x5B57;&#x4FEE;&#x6539;&#x4E3A; &quot;Never Has Toner&quot; (&#x4ECE;&#x6765;&#x6CA1;&#x6709;&#x78B3;&#x7C89;)&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4FDD;&#x8BC1; <code>send(job: toPrinter:)</code> &#x51FD;&#x6570;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x591A;&#x79CD; <code>catch</code> &#x5757;&#x6765;&#x5904;&#x7406;&#x5177;&#x4F53;&#x7684;&#x9519;&#x8BEF;&#x7C7B;&#x578B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; <code>catch</code> &#x540E;&#x9762;&#x6DFB;&#x52A0;&#x5339;&#x914D;&#x6761;&#x4EF6;&#xFF0C;&#x6A21;&#x5F0F;&#x548C; switch &#x8BED;&#x53E5;&#x4E2D; <code>case</code> &#x540E;&#x9762;&#x7684;&#x5339;&#x914D;&#x6761;&#x4EF6;&#x7C7B;&#x4F3C;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">do</span> {
     <span class="hljs-keyword">let</span> printerResponse = <span class="hljs-keyword">try</span> send(job: <span class="hljs-number">1040</span>, toPrinter: <span class="hljs-string">&quot;Gutenberg&quot;</span>)
     <span class="hljs-built_in">print</span>(printerResponse)
 } <span class="hljs-keyword">catch</span> <span class="hljs-type">PrinterError</span>.onFire {
@@ -865,25 +894,18 @@ b.adjust()
 } <span class="hljs-keyword">catch</span> {
     <span class="hljs-built_in">print</span>(error)
 }
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Add code to throw an error inside the `do` block. What kind of error do you </span>
-<span class="hljs-comment">// need to throw so that the error is handled by the first `catch` block? What </span>
-<span class="hljs-comment">// about the second and third blocks?</span>
-<span class="hljs-comment">//</span>
-<span class="hljs-comment">// ANSWER:</span>
-<span class="hljs-comment">//   For the first `catch` block, we should define the action to throw</span>
-<span class="hljs-comment">// `PrinterError.onFire` in the function `send` body, and call the counterpart</span>
-<span class="hljs-comment">// function to get the Error.</span>
-<span class="hljs-comment">//   In the same way, for the second block, we can use the same way to get the</span>
-<span class="hljs-comment">// `PrinterError` except the specific PrinterError type which has been caught.</span>
-<span class="hljs-comment">//   Besides, for the third block, we should make the code throw the error whose</span>
-<span class="hljs-comment">// type is not in `PrinterError`.</span>
-
-<span class="hljs-keyword">let</span> printerSuccess = <span class="hljs-keyword">try</span>? send(job: <span class="hljs-number">1884</span>, toPrinter: <span class="hljs-string">&quot;Mergenthaler&quot;</span>)
+<span class="hljs-comment">// &#x6253;&#x5370; &quot;Job sent&quot;</span>
+</code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x8865;&#x5145;&#x4EE3;&#x7801;&#x4EE5;&#x4F7F;&#x5F97; <code>do</code> &#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;&#x629B;&#x51FA;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x9519;&#x8BEF;&#x624D;&#x80FD;&#x4F7F;&#x5F97;&#x9519;&#x8BEF;&#x88AB;&#x7B2C;&#x4E00;&#x4E2A; <code>catch</code> &#x5757;&#x5904;&#x7406;&#xFF1F;&#x90A3;&#x4E3A;&#x4E86;&#x88AB;&#x7B2C;&#x4E8C;&#x4E2A;&#x3001;&#x7B2C;&#x4E09;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x5904;&#x7406;&#xFF0C;&#x53C8;&#x8BE5;&#x5982;&#x4F55;&#x5462;&#xFF1F;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x53E6;&#x4E00;&#x79CD;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528; <code>try?</code> &#x6765;&#x5C06;&#x7ED3;&#x679C;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x503C;&#x3002;&#x5982;&#x679C;&#x51FD;&#x6570;&#x5185;&#x629B;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x5C31;&#x76F4;&#x63A5;&#x88AB;&#x4E22;&#x5F03;&#x5E76;&#x4E14;&#x5916;&#x5C42;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x4E00;&#x4E2A; <code>nil</code> &#x3002;&#x5426;&#x5219;&#xFF0C;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x62E5;&#x6709;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x53EF;&#x9009;&#x503C;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> printerSuccess = <span class="hljs-keyword">try</span>? send(job: <span class="hljs-number">1884</span>, toPrinter: <span class="hljs-string">&quot;Mergenthaler&quot;</span>)
 <span class="hljs-keyword">let</span> printerFailure = <span class="hljs-keyword">try</span>? send(job: <span class="hljs-number">1885</span>, toPrinter: <span class="hljs-string">&quot;Never Has Toner&quot;</span>)
-
-<span class="hljs-keyword">var</span> fridgeIsOpen = <span class="hljs-literal">false</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F7F;&#x7528; <code>defer</code> &#x6765;&#x5B9A;&#x4E49;&#x90A3;&#x4E9B;&#x5728;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x524D;&#x52A1;&#x5FC5;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x5373;&#x4F7F;&#x662F;&#x51FD;&#x6570;&#x5185;&#x629B;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#x4E5F;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x5230;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>defer</code> &#x6765;&#x5C06;&#x51FD;&#x6570;&#x4E2D;&#x521D;&#x59CB;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x548C;&#x7ED3;&#x675F;&#x65F6;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x76F8;&#x90BB;&#x653E;&#x7F6E;&#xFF0C;&#x5C3D;&#x7BA1;&#x4ED6;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x9700;&#x8981;&#x5728;&#x4E0D;&#x540C;&#x65F6;&#x673A;&#x6765;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> fridgeIsOpen = <span class="hljs-literal">false</span>
 <span class="hljs-keyword">let</span> fridgeContent = [<span class="hljs-string">&quot;milk&quot;</span>, <span class="hljs-string">&quot;eggs&quot;</span>, <span class="hljs-string">&quot;leftovers&quot;</span>]
 
 <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">fridgeContains</span><span class="hljs-params">(<span class="hljs-number">_</span> food: String)</span></span> -&gt; <span class="hljs-type">Bool</span> {
@@ -897,8 +919,10 @@ b.adjust()
 }
 fridgeContains(<span class="hljs-string">&quot;banana&quot;</span>)
 <span class="hljs-built_in">print</span>(fridgeIsOpen)
+<span class="hljs-comment">// &#x6253;&#x5370; &quot;false&quot;</span>
 </code></pre>
-<h2 id="generics">Generics</h2>
+<h2 id="&#x6CDB;&#x578B;">&#x6CDB;&#x578B;</h2>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5728;&#x5C16;&#x89D2;&#x62EC;&#x53F7;&#x4E2D;&#x6DFB;&#x52A0;&#x540D;&#x5B57;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x51FD;&#x6570;&#x6216;&#x7C7B;&#x578B;&#x3002;</p>
 <pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">makeArray</span>&lt;Item&gt;<span class="hljs-params">(repeating item: Item, numberOfTimes: Int)</span></span> -&gt; [<span class="hljs-type">Item</span>] {
     <span class="hljs-keyword">var</span> result = [<span class="hljs-type">Item</span>]()
     <span class="hljs-keyword">for</span> <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-number">0</span>..&lt;numberOfTimes {
@@ -907,15 +931,18 @@ fridgeContains(<span class="hljs-string">&quot;banana&quot;</span>)
     <span class="hljs-keyword">return</span> result
 }
 makeArray(repeating: <span class="hljs-string">&quot;knock&quot;</span>, numberOfTimes: <span class="hljs-number">4</span>)
-
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x3001;&#x679A;&#x4E3E;&#x7C7B;&#x4EE5;&#x53CA;&#x7ED3;&#x6784;&#x4F53;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// &#x5BF9; Swift &#x6807;&#x51C6;&#x5E93;&#x4E2D;&#x7684;&#x53EF;&#x9009;&#x503C;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x5B9E;&#x73B0;</span>
 <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">OptionalValue</span>&lt;<span class="hljs-title">Wrapped</span>&gt; </span>{
     <span class="hljs-keyword">case</span> <span class="hljs-keyword">none</span>
     <span class="hljs-keyword">case</span> some(<span class="hljs-type">Wrapped</span>)
 }
 <span class="hljs-keyword">var</span> possibleInteger: <span class="hljs-type">OptionalValue</span>&lt;<span class="hljs-type">Int</span>&gt; = .<span class="hljs-keyword">none</span>
 possibleInteger = .some(<span class="hljs-number">100</span>)
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">anyCommonElements</span>&lt;T: Sequence, U: Sequence&gt;<span class="hljs-params">(<span class="hljs-number">_</span> lhs: T, <span class="hljs-number">_</span> rhs: U)</span></span> -&gt; <span class="hljs-type">Bool</span>
+</code></pre>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x5728;&#x51FD;&#x6570;&#x4F53;&#x524D;&#x7528; <code>where</code> &#x6765;&#x6307;&#x5B9A;&#x6CDB;&#x578B;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x7684;&#x6761;&#x4EF6;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x9700;&#x8981;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x5B9E;&#x73B0;&#x4E86;&#x5177;&#x4F53;&#x7684;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;&#xFF0C;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x7C7B;&#x578B;&#x5F7C;&#x6B64;&#x76F8;&#x540C;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x9700;&#x8981;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x62E5;&#x6709;&#x7279;&#x5B9A;&#x7684;&#x7236;&#x7C7B;&#x3002;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">anyCommonElements</span>&lt;T: Sequence, U: Sequence&gt;<span class="hljs-params">(<span class="hljs-number">_</span> lhs: T, <span class="hljs-number">_</span> rhs: U)</span></span> -&gt; <span class="hljs-type">Bool</span>
     <span class="hljs-keyword">where</span> <span class="hljs-type">T</span>.<span class="hljs-type">Element</span>: <span class="hljs-type">Equatable</span>, <span class="hljs-type">T</span>.<span class="hljs-type">Element</span> == <span class="hljs-type">U</span>.<span class="hljs-type">Element</span>
 {
     <span class="hljs-keyword">for</span> lhsItem <span class="hljs-keyword">in</span> lhs {
@@ -928,25 +955,12 @@ possibleInteger = .some(<span class="hljs-number">100</span>)
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
 }
 anyCommonElements([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">3</span>])
-
-<span class="hljs-comment">// EXPERIMENT:</span>
-<span class="hljs-comment">//   Modify the anyCommonElements(_:_:) function to make a function that returns an</span>
-<span class="hljs-comment">// array of the elements that any two sequences have in common.</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">commonElements</span>&lt;T: Sequence, U: Sequence&gt;<span class="hljs-params">(<span class="hljs-number">_</span> lhs: T, <span class="hljs-number">_</span> rhs: U)</span></span> -&gt; [<span class="hljs-type">T</span>.<span class="hljs-type">Element</span>]
-    <span class="hljs-keyword">where</span> <span class="hljs-type">T</span>.<span class="hljs-type">Element</span>: <span class="hljs-type">Equatable</span>, <span class="hljs-type">T</span>.<span class="hljs-type">Element</span> == <span class="hljs-type">U</span>.<span class="hljs-type">Element</span>
-{
-    <span class="hljs-keyword">var</span> ans = [<span class="hljs-type">T</span>.<span class="hljs-type">Element</span>]()
-    <span class="hljs-keyword">for</span> lhsItem <span class="hljs-keyword">in</span> lhs {
-        <span class="hljs-keyword">for</span> rhsItem <span class="hljs-keyword">in</span> rhs {
-            <span class="hljs-keyword">if</span> lhsItem == rhsItem {
-                ans.append(lhsItem)
-            }
-        }
-    }
-    <span class="hljs-keyword">return</span> ans
-}
-commonElements([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>])
 </code></pre>
+<blockquote>
+<p><em><strong>&#x5B9E;&#x8DF5;</strong></em></p>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; &#x4FEE;&#x6539; <code>anyCommonElements(_: _:)</code> &#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x5305;&#x542B;&#x4E86;&#x4EFB;&#x610F;&#x4E24;&#x4E2A;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x7684;&#x6240;&#x6709;&#x5171;&#x6709;&#x5143;&#x7D20;&#x3002;</p>
+</blockquote>
+<p>&#xA0; &#xA0; &#xA0; &#xA0; <code>&lt;T: Equatable&gt;</code> &#x4E0E; <code>&lt;T&gt; .. where T: Equatable</code> &#x8FD9;&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x6548;&#x679C;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
 
                                 
                                 </section>
@@ -990,7 +1004,7 @@ commonElements([<span class="hljs-number">1</span>, <span class="hljs-number">2<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Swift 之旅","level":"1.2.3","depth":2,"next":{"title":"语法教程","level":"1.3","depth":1,"path":"LanguageGuide/README.md","ref":"LanguageGuide/README.md","articles":[]},"previous":{"title":"版本适配","level":"1.2.2","depth":2,"path":"WelcomeToSwift/VersionCompatibility.md","ref":"WelcomeToSwift/VersionCompatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","-lunr","-search","search-pro","theme-comscore"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":true},"search-pro":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"modnarshen","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Swift Programming Language","gitbook":"*","description":"Swift编程语言"},"file":{"path":"WelcomeToSwift/ASwiftTour.md","mtime":"2022-06-11T18:58:20.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-11T18:58:24.496Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Swift 之旅","level":"1.2.3","depth":2,"next":{"title":"语法教程","level":"1.3","depth":1,"path":"LanguageGuide/README.md","ref":"LanguageGuide/README.md","articles":[]},"previous":{"title":"版本适配","level":"1.2.2","depth":2,"path":"WelcomeToSwift/VersionCompatibility.md","ref":"WelcomeToSwift/VersionCompatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","-lunr","-search","search-pro","theme-comscore"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code":{"copyButtons":true},"search-pro":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"modnarshen","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Swift Programming Language","gitbook":"*","description":"Swift编程语言"},"file":{"path":"WelcomeToSwift/ASwiftTour.md","mtime":"2022-06-12T10:49:04.263Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T10:49:08.170Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
