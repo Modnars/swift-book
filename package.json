@@ -5,8 +5,7 @@
   "main": "book.js",
   "dependencies": {
     "gitbook-plugin-code": "^0.1.0",
-    "gitbook-plugin-search-pro": "^2.0.2",
-    "gitbook-plugin-theme-comscore": "0.0.3"
+    "gitbook-plugin-search-pro": "^2.0.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Modnars/TheSwiftProgrammingLanguage.git"
+    "url": "git+https://github.com/Modnars/swift-book.git"
   },
   "author": "modnarshen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Modnars/TheSwiftProgrammingLanguage/issues"
+    "url": "https://github.com/Modnars/swift-book/issues"
   },
-  "homepage": "https://github.com/Modnars/TheSwiftProgrammingLanguage#readme"
+  "homepage": "https://github.com/Modnars/swift-book#readme"
 }
