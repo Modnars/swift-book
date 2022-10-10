@@ -10,4 +10,4 @@
 
 > 英文在线原版 [_The Swift Programming Language_](https://docs.swift.org/swift-book/)
 
-> SwiftGG翻译组中文译版 [_The Swift Programming Language in Chinese_](https://swiftgg.gitbook.io/swift/)
+> SwiftGG 翻译组中文译版 [_The Swift Programming Language in Chinese_](https://swiftgg.gitbook.io/swift/)

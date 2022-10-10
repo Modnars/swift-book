@@ -353,3 +353,131 @@ let integerPi = Int(pi)
 > _**说明**_
 >
 > &#160; &#160; &#160; &#160; 数值型常量及变量的计算规则与数值型字面值的规则并不相同。字面值 3 可以与字面值 0.14159 直接相加，是因为数值型字面值本身并没有明确的类型。它们的类型仅在编译器处理到时才会被推导确定。
+
+## 类型别名
+
+&#160; &#160; &#160; &#160; **类型别名**能够为已有的类型定义一个可代替使用的名字，你可以使用 `typealias` 关键字来定义一个类型别名。
+
+&#160; &#160; &#160; &#160; 类型别名很适合在一段代码中用于指代一个已有的类型。比如从外部空间采集音频样本时：
+
+```swift
+typealias AudioSample = UInt16
+```
+
+&#160; &#160; &#160; &#160; 成功定义了一个类型别名后，就可以在任何其他本可以使用原类型的地方，改为使用这个新的命名别名：
+
+```swift
+var maxAmplitudeFound = AudioSample.min
+// 现在，maxAmplitudeFound 的值是 0
+```
+
+&#160; &#160; &#160; &#160; 这里，`AudioSample` 是 `UInt16` 的命名别名。由于它本身只是一个命名别名，那么对于 `AudioSample.min` 的调用，实际就是调用的 `UInt16.min`。结果就是为变量 `maxAmplitudeFound` 赋予了初始值 0。
+
+## 布尔值
+
+&#160; &#160; &#160; &#160; Swift 的**布尔**基本类型，关键字为 `Bool`。由于布尔值只能是真（true）或假（false），所以通常用于表示逻辑值。Swift 也提供了这两个布尔类型的常量值，即 `true` 和 `false`：
+
+```swift
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+```
+
+&#160; &#160; &#160; &#160; 这里使用了布尔类型的字面值常量为 `orangesAreOrange` 和 `turnipsAreDelicious` 赋初值，所以它们的类型被推导为 `Bool` 类型。与之前讲过的 `Int` 及 `Double` 类型一样，使用布尔类型字面值创建的常量（或变量）无需显示地声明其为 `Bool` 类型。即：当使用明确类型的值去初始化常量（或变量）时，类型推导可保持 Swift 代码的简洁性与易读性。
+
+&#160; &#160; &#160; &#160; 对于 `if` 这样的条件语句，布尔值就显得格外重要：
+
+```swift
+if turnipsAreDelicious {
+    print("Mmm, tasty turnips!")
+} else {
+    print("Eww, turnips are horrible.")
+}
+// 打印 “Eww, turnips are horrible.”
+```
+
+&#160; &#160; &#160; &#160; 关于条件语句（包括 `if` 语句在内）的细节，可参考 [控制流](./ControlFlow.md) 章节。
+
+&#160; &#160; &#160; &#160; Swift 的类型安全机制会禁止非布尔类型的值隐式转换为 `Bool` 类型。对于这个例子，编译器将会直接报错：
+
+```swift
+let i = 1
+if i {
+    // 这段示例代码不会编译通过，并且会收到编译器的报错。
+}
+```
+
+&#160; &#160; &#160; &#160; 而这样的示例代码才能通过编译：
+
+```swift
+let i = 1
+if i == 1 {
+    // 这段代码可以成功通过编译
+}
+```
+
+&#160; &#160; &#160; &#160; `i == 1` 比较（运算操作）的结果是 `Bool` 类型的，这就是上述第二个示例可以通过类型检查的原因。类似 `i == 1` 这样的比较操作，在 [基础操作符](./BasicOperators.md) 章节会有进一步的探讨。
+
+&#160; &#160; &#160; &#160; 正如其他相关示例代码一样，Swift 类型安全可以避免无意的错误，使得代码能够更加清晰地表明其逻辑意图。
+
+## 元组
+
+&#160; &#160; &#160; &#160; **元组类型**是将多种类型组合到一起的类型，元组支持组合任意类型且并不要求这些类型必须一致。
+
+&#160; &#160; &#160; &#160; 在接下来的示例代码中，`(404, "Not Found")` 就是一个描述**HTTP 状态码**的元组类型值。HTTP 状态码是用户访问网页时 Web 服务器返回的特定编码。当访问的页面不存在时，服务器就会返回 `404 Not Found`。
+
+```swift
+let http404Error = (404, "Not Found")
+// http404Error 的类型是 (Int, String) 元组，它的值是 (404, "Not Found")
+```
+
+&#160; &#160; &#160; &#160; `(404, "Not Found")` 元组组合了 `Int` 和 `String` 类型，以此来描述 HTTP 状态码，就可以用一个数值表示具体错误码、用一个字符串描述具体问题。因此，它也可以看作是“`(Int, String)` 元组”的值。
+
+&#160; &#160; &#160; &#160; 元组支持任意数量、任意排列的组合。无论是需要 `(Int, Int, Int)` 类型还是 `(String, Bool)` 类型，元组都可以支持。
+
+&#160; &#160; &#160; &#160; 同时，元组也支持**拆分**，继而可以用以往赋值方式来单独访问其元素：
+
+```swift
+let (statusCode, statusMessage) = http404Error
+print("The status code is \(statusCode)")
+// 打印“The status code is 404”
+print("The status message is \(statusMessage)")
+// 打印“The status message is Not Found”
+```
+
+&#160; &#160; &#160; &#160; 如果只是需要元组的部分元素值，则可以用下划线作为需要忽略元素的变量名：
+
+```swift
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+// 打印“The status code is 404”
+```
+
+&#160; &#160; &#160; &#160; 或者，也可以用从 0 开始的下标来访问元组的单个元素值：
+
+```swift
+print("The status code is \(http404Error.0)")
+// 打印“The status code is 404”
+print("The status message is \(http404Error.1)")
+// 打印“The status message is Not Found”
+```
+
+&#160; &#160; &#160; &#160; 元组也同样支持在元组创建时为其元素设置名字：
+
+```swift
+let http200Status = (statusCode: 200, description: "OK")
+```
+
+&#160; &#160; &#160; &#160; 这样一来，就可以直接通过元素名直接访问相应元素了：
+
+```swift
+print("The status code is \(http200Status.statusCode)")
+// 打印“The status code is 200”
+print("The status message is \(http200Status.description)")
+// 打印“The status message is OK”
+```
+
+&#160; &#160; &#160; &#160; 元组类型经常作为函数的返回值类型。网页检索的函数可以返回 `(Int, String)` 类型的元组来描述检索操作是否成功，相比于返回的单类型值，有着两种不同元素类型的元组可以提供更加丰富有用的信息。关于函数返回值的更多信息，可以参考 [多种返回值型函数](./Functions.md#多种返回值型函数)。
+
+> _**说明**_
+>
+> &#160; &#160; &#160; &#160; 元组很适用于组合有关联的简单类型，但并不适合用来创建复杂的数据结构。如果数据结构很复杂，用类或结构体来定义（而非元组）则更为合适。关于这部分的更多信息，详见 [结构体与类](./StructuresAndClasses.md) 章节。
